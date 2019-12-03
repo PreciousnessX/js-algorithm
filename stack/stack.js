@@ -68,8 +68,8 @@ let Stack = (function () { // 工厂函数,形成一个闭包
          */
         print() {
             let arr = container.get(this)
-            return arr
-            // console.log(arr.toString())
+            // return arr
+            console.log(arr.toString())
         }
 
         get length() { // 定义一个get函数 直接拿长度
