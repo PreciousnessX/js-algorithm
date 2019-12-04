@@ -93,7 +93,7 @@ function LinkedList() {
 
     this.removeAt = function (index) { 
         // 检查越界值
-        if (index >= 0 && index <= length) {
+        if (index >= 0 && index < length) {
             var current = head, pos = 0,prev;
             if (index === 0) {
                 head = current.next
