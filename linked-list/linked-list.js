@@ -174,9 +174,10 @@ function LinkedList() {
         var str = ""
         var current = head
         while (current) { 
-            str += current.element + current.next ? "," : "" 
+            str += current.element + (current.next ? "," : "")
             current = current.next
         }
+        return str
     }
 
     /**
@@ -187,4 +188,15 @@ function LinkedList() {
         console.log(this.toString())
     }
 }
+
+/**
+ * 验证一下链表是否有效
+ */
+var linked = new LinkedList()
+linked.append(1)
+linked.append("A")
+linked.append("B")
+linked.append("C")
+
+console.log(linked.toString())
 
